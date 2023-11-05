@@ -40,7 +40,7 @@ else
   # Install and configure powerlevel10k
   sudo rm -rf "$POWERLEVEL10K_DIR"
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$POWERLEVEL10K_DIR"
-  sed -i 's/ZSH_THEME=".*"/ZSH_THEME="powerlevel10k/powerlevel10k"/g' ~/.zshrc
+  sed -i 's/ZSH_THEME="agnoster"/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc
 
   # Install plugins
   git clone https://github.com/zsh-users/zsh-autosuggestions.git "$AUTOSUGGESTIONS_DIR"
