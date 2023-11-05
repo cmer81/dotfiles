@@ -56,5 +56,6 @@ echo "p10k configure"
 echo "Thanks for using this script. It actually saves lot of time to install & configure zsh."
 
 # Install Script
+
 echo "install kubectl"
-exec ./script/install-kubectl.sh
+exec ./scripts/install-kubectl.sh
