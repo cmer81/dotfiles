@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# Install zsh
-sudo apt install zsh -y
+# Install zsh and apt-utils
+sudo apt install zsh apt-utils -y
 
 # Show version
 zsh --version
