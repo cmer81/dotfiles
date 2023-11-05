@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
 # Install zsh and apt-utils
 sudo apt install zsh apt-utils -y
 
