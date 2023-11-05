@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-export LC_CTYPE=en_US.UTF-8
-export LC_ALL=en_US.UTF-8
+sudo apt install zsh locales -y
+echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && locale-gen
 
 # Install zsh and apt-utils
 sudo apt install zsh apt-utils -y
@@ -60,5 +60,5 @@ echo "Thanks for using this script. It actually saves lot of time to install & c
 
 # Install Script
 
-exec ./scripts/install-kubectl.sh
-exec ./scripts/install-gcloud.sh
+sh ./scripts/install-kubectl.sh
+sh ./scripts/install-gcloud.sh
