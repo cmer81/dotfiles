@@ -38,9 +38,8 @@ else
   sudo apt install fonts-powerline -y
 
   # Install and configure powerlevel10k
-  sudo rm -rf "$POWERLEVEL10K_DIR"
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$POWERLEVEL10K_DIR"
-  sed -i 's/ZSH_THEME="agnoster"/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.zshrc
+  sed  -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="agnoster"/g' ~/.zshrc
 
   # Install plugins
   git clone https://github.com/zsh-users/zsh-autosuggestions.git "$AUTOSUGGESTIONS_DIR"
@@ -52,8 +51,8 @@ else
   # Disable auto wizard
   echo "POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true" >> ~/.zshrc
 
-  # Suggest to start a new zsh session
-  echo "Please start a new zsh session or source ~/.zshrc to apply changes."
+  # Force ZSH
+  echo "exec zsh" >> ~/.bashrc
 
   # Final message
   echo "Thanks for using this script. It saves a lot of time to install & configure zsh."
