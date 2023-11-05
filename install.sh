@@ -7,7 +7,7 @@ sudo apt install zsh -y
 zsh --version
 
 # Set zsh as default shell
-chsh -s /usr/bin/zsh 
+sudo chsh -s /usr/bin/zsh 
 
 
 # Echo zsh. 
