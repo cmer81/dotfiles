@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo apt-get install -y locales locales-all
+sudo apt apt update && apt install -y locales locales-all
 export LC_ALL en_US.UTF-8
 export LANG en_US.UTF-8
 export LANGUAGE en_US.UTF-8
