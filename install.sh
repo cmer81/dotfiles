@@ -1,9 +1,4 @@
-#!/usr/bin/env bash
-
-sudo apt update && sudo apt install -y locales locales-all
-export LC_ALL en_US.UTF-8
-export LANG en_US.UTF-8
-export LANGUAGE en_US.UTF-8
+#!/bin/bash
 
 # Install zsh and apt-utils
 sudo apt install zsh apt-utils -y
