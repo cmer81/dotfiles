@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-apt-get install -y locales locales-all
-ENV LC_ALL en_US.UTF-8
-ENV LANG en_US.UTF-8
-ENV LANGUAGE en_US.UTF-8
+sudo apt-get install -y locales locales-all
+export LC_ALL en_US.UTF-8
+export LANG en_US.UTF-8
+export LANGUAGE en_US.UTF-8
 
 # Install zsh and apt-utils
 sudo apt install zsh apt-utils -y
