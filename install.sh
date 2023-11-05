@@ -42,7 +42,7 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 
 # Enable plugins
-sed  -i 's/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting)/g' ~/.zshrc
+sed  -i 's/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting kubectl kube-ps1)/g' ~/.zshrc
 
 # Desibale auto wizard
 echo "POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true" >> ~/.zshrc
@@ -57,5 +57,5 @@ echo "Thanks for using this script. It actually saves lot of time to install & c
 
 # Install Script
 
-echo "install kubectl"
 exec ./scripts/install-kubectl.sh
+exec ./scripts/install-gcloud.sh
