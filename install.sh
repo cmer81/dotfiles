@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
-sudo apt install zsh locales -y
-echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && locale-gen
+apt-get install -y locales locales-all
+ENV LC_ALL en_US.UTF-8
+ENV LANG en_US.UTF-8
+ENV LANGUAGE en_US.UTF-8
 
 # Install zsh and apt-utils
 sudo apt install zsh apt-utils -y
