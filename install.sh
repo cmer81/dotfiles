@@ -37,7 +37,6 @@ sed  -i 's/ZSH_THEME="agnoster"/ZSH_THEME="powerlevel10k\/powerlevel10k"/g' ~/.z
 
 # Install plugins (zsh-autosuggestions and zsh-syntax-highlighting)
 git clone https://github.com/zsh-users/zsh-autosuggestions.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions 
-
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
 
@@ -45,7 +44,17 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 # Enable plugins
 sed  -i 's/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting)/g' ~/.zshrc
 
+# Desibale auto wizard
+echo 'POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true' >>! ~/.zshrc
+
+# Force ZSH
+echo "exec zsh" >> .bashrc
+
 echo "Successfully Installed. Start new terminal and configure powerlevel10k."
 echo "If p10k configuration wizard does not start automatically, run following"
 echo "p10k configure"
 echo "Thanks for using this script. It actually saves lot of time to install & configure zsh."
+
+# Install Script
+echo "install kubectl"
+exec ./script/install-kubectl.sh
