@@ -54,7 +54,7 @@ else
 
   # Suggest to start a new zsh session
   echo "Please start a new zsh session or source ~/.zshrc to apply changes."
-fi
 
-# Final message
-echo "Thanks for using this script. It saves a lot of time to install & configure zsh."
+  # Final message
+  echo "Thanks for using this script. It saves a lot of time to install & configure zsh."
+fi
