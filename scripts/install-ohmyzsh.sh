@@ -13,7 +13,7 @@ command_exists() {
 }
 
 # Ensure necessary tools are installed
-for tool in curl git apt; do
+for tool in curl git apt-get; do
   if ! command_exists $tool; then
     echo "Error: $tool is not installed." >&2
     exit 1
@@ -35,7 +35,7 @@ else
   fi
 
   # Install fonts-powerline
-  sudo apt install fonts-powerline -y
+  sudo apt-get install fonts-powerline -y
 
   # Install and configure powerlevel10k
   git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$POWERLEVEL10K_DIR"

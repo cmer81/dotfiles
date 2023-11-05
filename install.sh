@@ -6,7 +6,7 @@ sudo locale-gen en_US.UTF-8
 sudo dpkg-reconfigure --frontend=noninteractive locales
 
 # Install zsh
-sudo apt update && sudo apt install zsh -y
+sudo apt-get update && sudo apt-get install zsh -y
 
 # Set zsh as the default shell
 if ! sudo chsh -s /usr/bin/zsh; then
