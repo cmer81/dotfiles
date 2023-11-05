@@ -1,5 +1,9 @@
 #!/bin/bash
 
+sudo locale-gen en_US.UTF-8
+sudo dpkg-reconfigure --frontend=noninteractive locales
+
+
 # Install zsh and apt-utils
 sudo apt install zsh apt-utils -y
 
