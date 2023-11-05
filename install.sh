@@ -17,5 +17,5 @@ sudo chsh -s /usr/bin/zsh
 # Install Script
 
 sh ./scripts/install-ohmyzsh.sh
-sh ./scripts/install-kubectl.sh
-sh ./scripts/install-gcloud.sh
+# sh ./scripts/install-kubectl.sh
+# sh ./scripts/install-gcloud.sh
