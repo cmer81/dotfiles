@@ -48,7 +48,7 @@ sed  -i 's/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlightin
 echo 'POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true' >>! ~/.zshrc
 
 # Force ZSH
-echo "exec zsh" >> .bashrc
+echo "exec zsh" >> ~/.bashrc
 
 echo "Successfully Installed. Start new terminal and configure powerlevel10k."
 echo "If p10k configuration wizard does not start automatically, run following"
