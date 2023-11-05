@@ -1,5 +1,6 @@
 #!/bin/bash
 
+export DEBIAN_FRONTEND=noninteractive
 sudo locale-gen en_US.UTF-8
 sudo dpkg-reconfigure --frontend=noninteractive locales
 
