@@ -29,7 +29,7 @@ run_script() {
 
 # Install Oh My Zsh, kubectl, and gcloud
 run_script "install-ohmyzsh"
-run_script "install-kubectl"
+# run_script "install-kubectl"
 # run_script "install-gcloud"
 
 echo "Installation completed successfully."
